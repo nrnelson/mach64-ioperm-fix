@@ -1,0 +1,88 @@
+Linux x2p3ntium 6.1.0-54-686-pae #1 SMP PREEMPT_DYNAMIC Debian 6.1.190-1 (2026-10-16) i686 GNU/Linux
+Debian 12.15
+ii  xserver-xorg-core         2:21.1.7-3+deb12u13 i386         Xorg X server - core server
+ii  xserver-xorg-video-mach64 6.9.7-1+ioperm1     i386         X.Org X server -- ATI Mach64 display driver
+
+00:06.0 VGA compatible controller [0300]: Advanced Micro Devices, Inc. [AMD/ATI] Rage 3 [Rage XL PCI] [1002:4752] (rev 27) (prog-if 00 [VGA controller])
+	Subsystem: Advanced Micro Devices, Inc. [AMD/ATI] Rage XL [1002:8008]
+	Flags: bus master, stepping, medium devsel, latency 66, IRQ 11
+	Memory at f8000000 (32-bit, non-prefetchable) [size=16M]
+	I/O ports at 1000 [size=256]
+	Memory at f9101000 (32-bit, non-prefetchable) [size=4K]
+	Expansion ROM at 000c0000 [virtual] [disabled] [size=128K]
+/proc/ioports (root):
+0000-0cf7 : PCI Bus 0000:00
+  0000-001f : dma1
+  0020-0021 : pic1
+  0040-0043 : timer0
+  0050-0053 : timer1
+  0060-0060 : keyboard
+  0061-0061 : PNP0800:00
+  0064-0064 : keyboard
+  0070-0071 : rtc0
+  0080-008f : dma page reg
+  00a0-00a1 : pic2
+  00c0-00df : dma2
+  00f0-00ff : PNP0C04:00
+    00f0-00ff : fpu
+  0102-0105 : pnp 00:08
+  0107-0107 : pnp 00:08
+  0170-0177 : 0000:00:0f.1
+    0170-0177 : pata_serverworks
+  01f0-01f7 : 0000:00:0f.1
+    01f0-01f7 : pata_serverworks
+  0220-0220 : pnp 00:08
+  0225-0225 : pnp 00:08
+  0228-0228 : pnp 00:08
+  022a-022e : pnp 00:08
+  02f8-02ff : serial
+  0374-0377 : 0000:00:0f.1
+    0374-0377 : pata_serverworks
+  0378-037a : parport0
+  037b-037f : parport0
+  03c0-03df : vga+
+  03f2-03f2 : floppy
+  03f4-03f5 : floppy
+  03f6-03f6 : 0000:00:0f.1
+    03f6-03f6 : pata_serverworks
+  03f7-03f7 : floppy
+  03f8-03ff : serial
+  0400-040a : pnp 00:07
+    0400-0403 : ACPI PM1a_EVT_BLK
+    0404-0407 : ACPI PM_TMR
+    0408-0409 : ACPI PM1a_CNT_BLK
+  040b-040b : pnp 00:08
+  040c-0417 : pnp 00:07
+    0410-0417 : ACPI GPE0_BLK
+  0418-0418 : pnp 00:07
+  0419-041b : pnp 00:08
+  041d-041f : pnp 00:08
+  04d0-04d1 : pnp 00:08
+  04d6-04d6 : pnp 00:08
+  0580-058d : pnp 00:08
+  0c00-0c01 : pnp 00:08
+  0c06-0c08 : pnp 00:08
+  0c14-0c14 : pnp 00:08
+  0c49-0c4a : pnp 00:08
+  0c50-0c51 : pnp 00:08
+  0c52-0c52 : pnp 00:08
+  0c6c-0c6c : pnp 00:08
+  0c6f-0c6f : pnp 00:08
+  0ca6-0ca6 : PNP0C09:00
+    0ca6-0ca6 : EC data
+  0ca7-0ca7 : PNP0C09:00
+    0ca7-0ca7 : EC cmd
+  0cd6-0cd7 : pnp 00:08
+0cf8-0cff : PCI conf1
+0d00-4fff : PCI Bus 0000:00
+  0f50-0f58 : pnp 00:08
+  1000-10ff : 0000:00:06.0
+  1400-143f : 0000:00:03.0
+    1400-143f : e100
+  1440-144f : 0000:00:0f.1
+    1440-144f : pata_serverworks
+  2000-24ff : PCI Bus 0000:01
+    2000-20ff : 0000:01:04.0
+    2400-24ff : 0000:01:04.1
+f000-ffff : PCI Bus 0000:00
+  fe00-fe20 : pnp 00:08

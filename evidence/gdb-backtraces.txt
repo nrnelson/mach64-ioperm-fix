@@ -1,0 +1,22 @@
+Stock xserver-xorg-video-mach64 6.9.7-1 (Debian 12), symbolized with debuginfod:
+
+  #0 ATIMach64Detect   atiprobe.c:143   bus_cntl = inr(BUS_CNTL);   <- inl on CPIOBase 0x1000 + reg
+  #1 ATIMach64Probe    atiprobe.c:278
+  #2 ATIMach64ProbeIO  atiprobe.c:454
+  #3 ATIPreInit        atipreinit.c:644
+
+Intermediate build that only did ioperm(CPIOBase, 0x100, 1) for the block I/O
+range gets past detection, then faults on the VGA setup port 0x46E8:
+
+Program received signal SIGSEGV, Segmentation fault.
+0xb718155c in outb (val=22 '\026', port=18152) at /usr/include/xorg/compiler.h:296
+296	    __asm__ __volatile__("outb %0,%1"::"a"(val), "d"(port));
+#0  0xb718155c in outb (val=22 '\026', port=18152) at /usr/include/xorg/compiler.h:296
+#1  ATIFindVGA (pATI=0x6f0ca0, pVideo=0x6e0a90) at ../../src/atiprobe.c:355
+#2  ATIMach64ProbeIO (pVideo=0x6e0a90, pATI=0x6f0ca0) at ../../src/atiprobe.c:490
+#3  0xb7191ad9 in ATIPreInit (pScreenInfo=<optimized out>, flags=<optimized out>) at ../../src/atipreinit.c:644
+#4  0x0048acde in InitOutput ()
+=> 0xb718155c <ATIMach64ProbeIO+1036>:	out    %al,(%dx)
+$edx = 0x46e8
+
+With iopl(3) (patches/0001) the server starts, EXA works, 1600x1200@60 16bpp.

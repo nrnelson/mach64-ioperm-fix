@@ -1,0 +1,556 @@
+[  4051.758] 
+X.Org X Server 1.21.1.7
+X Protocol Version 11, Revision 0
+[  4051.759] Current Operating System: Linux x2p3ntium 6.1.0-54-686-pae #1 SMP PREEMPT_DYNAMIC Debian 6.1.190-1 (2026-10-16) i686
+[  4051.759] Kernel command line: BOOT_IMAGE=/boot/vmlinuz-6.1.0-54-686-pae root=UUID=9bbd24cf-d8b0-46aa-81ec-a1c156a35bb6 ro quiet
+[  4051.759] xorg-server 2:21.1.7-3+deb12u13 (https://www.debian.org/support) 
+[  4051.759] Current version of pixman: 0.42.2
+[  4051.759] 	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+[  4051.759] Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+[  4051.760] (==) Log file: "/var/log/Xorg.0.log", Time: Mon Oct 19 21:03:56 2026
+[  4051.761] (==) Using config directory: "/etc/X11/xorg.conf.d"
+[  4051.761] (==) Using system config directory "/usr/share/X11/xorg.conf.d"
+[  4051.763] (==) No Layout section.  Using the first Screen section.
+[  4051.763] (**) |-->Screen "Screen0" (0)
+[  4051.763] (**) |   |-->Monitor "Dell2007FP"
+[  4051.764] (**) |   |-->Device "RageXL"
+[  4051.765] (==) Automatically adding devices
+[  4051.765] (==) Automatically enabling devices
+[  4051.765] (==) Automatically adding GPU devices
+[  4051.765] (==) Automatically binding GPU devices
+[  4051.765] (==) Max clients allowed: 256, resource mask: 0x1fffff
+[  4051.765] (WW) The directory "/usr/share/fonts/X11/cyrillic" does not exist.
+[  4051.765] 	Entry deleted from font path.
+[  4051.765] (WW) The directory "/usr/share/fonts/X11/100dpi/" does not exist.
+[  4051.765] 	Entry deleted from font path.
+[  4051.765] (WW) The directory "/usr/share/fonts/X11/75dpi/" does not exist.
+[  4051.765] 	Entry deleted from font path.
+[  4051.765] (WW) The directory "/usr/share/fonts/X11/100dpi" does not exist.
+[  4051.765] 	Entry deleted from font path.
+[  4051.765] (WW) The directory "/usr/share/fonts/X11/75dpi" does not exist.
+[  4051.765] 	Entry deleted from font path.
+[  4051.766] (==) FontPath set to:
+	/usr/share/fonts/X11/misc,
+	/usr/share/fonts/X11/Type1,
+	built-ins
+[  4051.766] (==) ModulePath set to "/usr/lib/xorg/modules"
+[  4051.766] (II) The server relies on udev to provide the list of input devices.
+	If no devices become available, reconfigure udev or disable AutoAddDevices.
+[  4051.766] (II) Loader magic: 0x6fe7a0
+[  4051.766] (II) Module ABI versions:
+[  4051.766] 	X.Org ANSI C Emulation: 0.4
+[  4051.766] 	X.Org Video Driver: 25.2
+[  4051.766] 	X.Org XInput driver : 24.4
+[  4051.766] 	X.Org Server Extension : 10.0
+[  4051.771] (++) using VT number 7
+
+[  4051.771] (II) systemd-logind: logind integration requires -keeptty and -keeptty was not provided, disabling logind integration
+[  4051.781] (--) PCI:*(0@0:6:0) 1002:4752:1002:8008 rev 39, Mem @ 0xf8000000/16777216, 0xf9101000/4096, I/O @ 0x00001000/256, BIOS @ 0x????????/131072
+[  4051.781] (II) LoadModule: "glx"
+[  4051.782] (II) Loading /usr/lib/xorg/modules/extensions/libglx.so
+[  4051.791] (II) Module glx: vendor="X.Org Foundation"
+[  4051.791] 	compiled for 1.21.1.7, module version = 1.0.0
+[  4051.791] 	ABI class: X.Org Server Extension, version 10.0
+[  4051.791] (II) LoadModule: "mach64"
+[  4051.792] (II) Loading /usr/lib/xorg/modules/drivers/mach64_drv.so
+[  4051.793] (II) Module mach64: vendor="X.Org Foundation"
+[  4051.793] 	compiled for 1.21.1.7, module version = 6.9.7
+[  4051.793] 	Module class: X.Org Video Driver
+[  4051.793] 	ABI class: X.Org Video Driver, version 25.2
+[  4051.793] (II) MACH64: Driver for ATI Mach64 chipsets
+[  4051.818] (**) MACH64(0): Depth 16, (--) framebuffer bpp 16
+[  4051.819] (==) MACH64(0): Using EXA acceleration architecture
+[  4051.819] (II) MACH64: Mach64 in slot 0:6:0 detected.
+[  4051.819] (II) Loading sub module "vbe"
+[  4051.819] (II) LoadModule: "vbe"
+[  4051.820] (II) Loading /usr/lib/xorg/modules/libint10.so
+[  4051.822] (II) Module int10: vendor="X.Org Foundation"
+[  4051.823] 	compiled for 1.21.1.7, module version = 1.0.0
+[  4051.823] 	ABI class: X.Org Video Driver, version 25.2
+[  4051.823] (II) Loading sub module "int10"
+[  4051.823] (II) LoadModule: "int10"
+[  4051.824] (II) Loading /usr/lib/xorg/modules/libint10.so
+[  4051.824] (II) Module int10: vendor="X.Org Foundation"
+[  4051.824] 	compiled for 1.21.1.7, module version = 1.0.0
+[  4051.824] 	ABI class: X.Org Video Driver, version 25.2
+[  4051.824] (II) MACH64(0): initializing int10
+[  4051.827] (II) MACH64(0): Primary V_BIOS segment is: 0xc000
+[  4051.828] (II) MACH64(0): VESA BIOS detected
+[  4051.828] (II) MACH64(0): VESA VBE Version 2.0
+[  4051.828] (II) MACH64(0): VESA VBE Total Mem: 8128 kB
+[  4051.828] (II) MACH64(0): VESA VBE OEM: ATI MACH64
+[  4051.829] (II) MACH64(0): VESA VBE OEM Software Rev: 1.0
+[  4051.829] (II) MACH64(0): VESA VBE OEM Vendor: ATI Technologies Inc.
+[  4051.829] (II) MACH64(0): VESA VBE OEM Product: MACH64GM
+[  4051.829] (II) MACH64(0): VESA VBE OEM Product Rev: 01.00
+[  4051.830] (II) MACH64(0): VESA VBE DDC supported
+[  4051.830] (II) MACH64(0): VESA VBE DDC Level 2
+[  4051.830] (II) MACH64(0): VESA VBE DDC transfer in appr. 2 sec.
+[  4051.894] (II) MACH64(0): VESA VBE DDC read successfully
+[  4051.895] (II) MACH64(0): Manufacturer: DEL  Model: a020  Serial#: 842216268
+[  4051.895] (II) MACH64(0): Year: 2006  Week: 29
+[  4051.895] (II) MACH64(0): EDID Version: 1.3
+[  4051.895] (II) MACH64(0): Analog Display Input,  Input Voltage Level: 0.700/0.300 V
+[  4051.895] (II) MACH64(0): Sync:  Separate  Composite  SyncOnGreen
+[  4051.895] (II) MACH64(0): Max Image Size [cm]: horiz.: 41  vert.: 31
+[  4051.895] (II) MACH64(0): Gamma: 2.20
+[  4051.895] (II) MACH64(0): DPMS capabilities: StandBy Suspend Off; RGB/Color Display
+[  4051.895] (II) MACH64(0): Default color space is primary color space
+[  4051.896] (II) MACH64(0): First detailed timing is preferred mode
+[  4051.896] (II) MACH64(0): redX: 0.640 redY: 0.330   greenX: 0.300 greenY: 0.600
+[  4051.896] (II) MACH64(0): blueX: 0.150 blueY: 0.060   whiteX: 0.312 whiteY: 0.329
+[  4051.896] (II) MACH64(0): Supported established timings:
+[  4051.896] (II) MACH64(0): 720x400@70Hz
+[  4051.896] (II) MACH64(0): 640x480@60Hz
+[  4051.896] (II) MACH64(0): 640x480@75Hz
+[  4051.896] (II) MACH64(0): 800x600@60Hz
+[  4051.896] (II) MACH64(0): 800x600@75Hz
+[  4051.896] (II) MACH64(0): 1024x768@60Hz
+[  4051.896] (II) MACH64(0): 1024x768@75Hz
+[  4051.896] (II) MACH64(0): 1280x1024@75Hz
+[  4051.896] (II) MACH64(0): Manufacturer's mask: 0
+[  4051.896] (II) MACH64(0): Supported standard timings:
+[  4051.896] (II) MACH64(0): #0: hsize: 1280  vsize 1024  refresh: 60  vid: 32897
+[  4051.896] (II) MACH64(0): #1: hsize: 1600  vsize 1200  refresh: 60  vid: 16553
+[  4051.896] (II) MACH64(0): #2: hsize: 1152  vsize 864  refresh: 75  vid: 20337
+[  4051.897] (II) MACH64(0): Supported detailed timing:
+[  4051.897] (II) MACH64(0): clock: 162.0 MHz   Image Size:  367 x 275 mm
+[  4051.897] (II) MACH64(0): h_active: 1600  h_sync: 1664  h_sync_end 1856 h_blank_end 2160 h_border: 0
+[  4051.897] (II) MACH64(0): v_active: 1200  v_sync: 1201  v_sync_end 1204 v_blanking: 1250 v_border: 0
+[  4051.897] (II) MACH64(0): Serial No: C953667G233L
+[  4051.897] (II) MACH64(0): Monitor name: DELL 2007FP
+[  4051.897] (II) MACH64(0): Ranges: V min: 56 V max: 76 Hz, H min: 30 H max: 83 kHz, PixClock max 175 MHz
+[  4051.897] (II) MACH64(0): EDID (in hex):
+[  4051.897] (II) MACH64(0): 	00ffffffffffff0010ac20a04c333332
+[  4051.897] (II) MACH64(0): 	1d1001030e291f78eeee91a3544c9926
+[  4051.897] (II) MACH64(0): 	0f5054a54b008180a940714f01010101
+[  4051.897] (II) MACH64(0): 	010101010101483f403062b0324040c0
+[  4051.897] (II) MACH64(0): 	13006f131100001e000000ff00433935
+[  4051.897] (II) MACH64(0): 	33363637473233334c0a000000fc0044
+[  4051.897] (II) MACH64(0): 	454c4c203230303746500a20000000fd
+[  4051.898] (II) MACH64(0): 	00384c1e5311000a2020202020200054
+[  4051.898] (II) MACH64(0): EDID vendor "DEL", prod id 40992
+[  4051.898] (II) MACH64(0): Using hsync ranges from config file
+[  4051.898] (II) MACH64(0): Using vrefresh ranges from config file
+[  4051.898] (II) MACH64(0): Printing DDC gathered Modelines:
+[  4051.898] (II) MACH64(0): Modeline "1600x1200"x0.0  162.00  1600 1664 1856 2160  1200 1201 1204 1250 +hsync +vsync (75.0 kHz eP)
+[  4051.898] (II) MACH64(0): Modeline "800x600"x0.0   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz e)
+[  4051.898] (II) MACH64(0): Modeline "640x480"x0.0   31.50  640 656 720 840  480 481 484 500 -hsync -vsync (37.5 kHz e)
+[  4051.898] (II) MACH64(0): Modeline "640x480"x0.0   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+[  4051.898] (II) MACH64(0): Modeline "720x400"x0.0   28.32  720 738 846 900  400 412 414 449 -hsync +vsync (31.5 kHz e)
+[  4051.898] (II) MACH64(0): Modeline "1280x1024"x0.0  135.00  1280 1296 1440 1688  1024 1025 1028 1066 +hsync +vsync (80.0 kHz e)
+[  4051.898] (II) MACH64(0): Modeline "1024x768"x0.0   78.75  1024 1040 1136 1312  768 769 772 800 +hsync +vsync (60.0 kHz e)
+[  4051.898] (II) MACH64(0): Modeline "1024x768"x0.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz e)
+[  4051.899] (II) MACH64(0): Modeline "800x600"x0.0   49.50  800 816 896 1056  600 601 604 625 +hsync +vsync (46.9 kHz e)
+[  4051.899] (II) MACH64(0): Modeline "1280x1024"x0.0  108.00  1280 1328 1440 1688  1024 1025 1028 1066 +hsync +vsync (64.0 kHz e)
+[  4051.899] (II) MACH64(0): Modeline "1152x864"x0.0  108.00  1152 1216 1344 1600  864 865 868 900 +hsync +vsync (67.5 kHz e)
+[  4051.900] (II) MACH64(0): BIOS Data:  BIOSSize=0x8000, ROMTable=0x010E.
+[  4051.900] (II) MACH64(0): BIOS Data:  ClockTable=0x097C, FrequencyTable=0x0000.
+[  4051.900] (II) MACH64(0): BIOS Data:  LCDTable=0x0000.
+[  4051.900] (II) MACH64(0): BIOS Data:  VideoTable=0x0000, HardwareTable=0x0158.
+[  4051.900] (II) MACH64(0): BIOS Data:  I2CType=0x0F, Tuner=0x00, Decoder=0x00, Audio=0x0F.
+[  4051.900] (--) MACH64(0): ATI 3D Rage XL or XC graphics controller detected.
+[  4051.900] (--) MACH64(0): Chip type 4752 "GR", version 7, foundry TSMC, class 0, revision 0x00.
+[  4051.900] (--) MACH64(0): PCI bus interface detected;  block I/O base is 0x1000.
+[  4051.900] (--) MACH64(0): ATI Mach64 adapter detected.
+[  4051.900] (!!) MACH64(0): For information on using the multimedia capabilities
+	of this adapter, please see http://gatos.sf.net.
+[  4051.900] (--) MACH64(0): Internal RAMDAC (subtype 1) detected.
+[  4051.900] (==) MACH64(0): RGB weight 565
+[  4051.900] (==) MACH64(0): Default visual is TrueColor
+[  4051.900] (==) MACH64(0): Using gamma correction (1.0, 1.0, 1.0)
+[  4051.900] (II) MACH64(0): Using Mach64 accelerator CRTC.
+[  4051.901] (II) MACH64(0): Storing hardware cursor image at 0xF87FFC00.
+[  4051.901] (II) MACH64(0): Using 8 MB linear aperture at 0xF8000000.
+[  4051.901] (!!) MACH64(0): Virtual resolutions will be limited to 8191 kB
+ due to linear aperture size and/or placement of hardware cursor image area.
+[  4051.901] (II) MACH64(0): Using Block 0 MMIO aperture at 0xF9101400.
+[  4051.901] (II) MACH64(0): Using Block 1 MMIO aperture at 0xF9101000.
+[  4051.903] (II) MACH64(0): MMIO write caching enabled.
+[  4051.904] (--) MACH64(0): 8192 kB of SGRAM (2:1) 32-bit detected (using 8191 kB).
+[  4051.904] (WW) MACH64(0): Cannot shadow an accelerated frame buffer.
+[  4051.904] (II) MACH64(0): Engine XCLK 62.815 MHz;  Refresh rate code 1.
+[  4051.904] (--) MACH64(0): Internal programmable clock generator detected.
+[  4051.904] (--) MACH64(0): Reference clock 157.5/11 (14.318) MHz.
+[  4051.904] (II) MACH64(0): Dell2007FP: Using hsync range of 30.00-83.00 kHz
+[  4051.904] (II) MACH64(0): Dell2007FP: Using vrefresh range of 56.00-76.00 Hz
+[  4051.904] (II) MACH64(0): Dell2007FP: Using maximum pixel clock of 175.00 MHz
+[  4051.904] (II) MACH64(0): Maximum clock: 230.00 MHz
+[  4051.904] (II) MACH64(0): Not using default mode "640x350" (vrefresh out of range)
+[  4051.904] (II) MACH64(0): Not using default mode "320x175" (vrefresh out of range)
+[  4051.904] (II) MACH64(0): Not using default mode "640x400" (vrefresh out of range)
+[  4051.904] (II) MACH64(0): Not using default mode "320x200" (vrefresh out of range)
+[  4051.904] (II) MACH64(0): Not using default mode "720x400" (vrefresh out of range)
+[  4051.905] (II) MACH64(0): Not using default mode "360x200" (vrefresh out of range)
+[  4051.905] (II) MACH64(0): Not using default mode "640x480" (vrefresh out of range)
+[  4051.905] (II) MACH64(0): Not using default mode "320x240" (vrefresh out of range)
+[  4051.905] (II) MACH64(0): Not using default mode "800x600" (vrefresh out of range)
+[  4051.905] (II) MACH64(0): Not using default mode "400x300" (vrefresh out of range)
+[  4051.905] (II) MACH64(0): Not using default mode "1024x768i" (vrefresh out of range)
+[  4051.905] (II) MACH64(0): Not using default mode "512x384i" (vrefresh out of range)
+[  4051.905] (II) MACH64(0): Not using default mode "1024x768" (vrefresh out of range)
+[  4051.905] (II) MACH64(0): Not using default mode "512x384" (vrefresh out of range)
+[  4051.905] (II) MACH64(0): Not using default mode "1280x960" (hsync out of range)
+[  4051.905] (II) MACH64(0): Not using default mode "640x480" (hsync out of range)
+[  4051.905] (II) MACH64(0): Not using default mode "1280x1024" (hsync out of range)
+[  4051.905] (II) MACH64(0): Not using default mode "640x512" (hsync out of range)
+[  4051.905] (II) MACH64(0): Not using default mode "1600x1200" (mode clock too high)
+[  4051.905] (II) MACH64(0): Not using default mode "1600x1200" (hsync out of range)
+[  4051.905] (II) MACH64(0): Not using default mode "800x600" (hsync out of range)
+[  4051.906] (II) MACH64(0): Not using default mode "1600x1200" (hsync out of range)
+[  4051.906] (II) MACH64(0): Not using default mode "800x600" (hsync out of range)
+[  4051.906] (II) MACH64(0): Not using default mode "1600x1200" (hsync out of range)
+[  4051.906] (II) MACH64(0): Not using default mode "800x600" (hsync out of range)
+[  4051.906] (II) MACH64(0): Not using default mode "1792x1344" (width too large for virtual size)
+[  4051.906] (II) MACH64(0): Not using default mode "1792x1344" (width too large for virtual size)
+[  4051.906] (II) MACH64(0): Not using default mode "896x672" (hsync out of range)
+[  4051.906] (II) MACH64(0): Not using default mode "1856x1392" (width too large for virtual size)
+[  4051.906] (II) MACH64(0): Not using default mode "928x696" (hsync out of range)
+[  4051.906] (II) MACH64(0): Not using default mode "1856x1392" (width too large for virtual size)
+[  4051.906] (II) MACH64(0): Not using default mode "928x696" (hsync out of range)
+[  4051.906] (II) MACH64(0): Not using default mode "1920x1440" (width too large for virtual size)
+[  4051.906] (II) MACH64(0): Not using default mode "960x720" (hsync out of range)
+[  4051.906] (II) MACH64(0): Not using default mode "1920x1440" (width too large for virtual size)
+[  4051.906] (II) MACH64(0): Not using default mode "960x720" (hsync out of range)
+[  4051.906] (II) MACH64(0): Not using default mode "1920x1440" (width too large for virtual size)
+[  4051.906] (II) MACH64(0): Not using default mode "960x720" (hsync out of range)
+[  4051.906] (II) MACH64(0): Not using default mode "2048x1536" (width too large for virtual size)
+[  4051.907] (II) MACH64(0): Not using default mode "1024x768" (hsync out of range)
+[  4051.907] (II) MACH64(0): Not using default mode "2048x1536" (width too large for virtual size)
+[  4051.907] (II) MACH64(0): Not using default mode "1024x768" (hsync out of range)
+[  4051.907] (II) MACH64(0): Not using default mode "2048x1536" (width too large for virtual size)
+[  4051.907] (II) MACH64(0): Not using default mode "1024x768" (hsync out of range)
+[  4051.907] (II) MACH64(0): Not using default mode "640x360" (hsync out of range)
+[  4051.907] (II) MACH64(0): Not using default mode "320x180" (hsync out of range)
+[  4051.907] (II) MACH64(0): Not using default mode "640x360" (hsync out of range)
+[  4051.907] (II) MACH64(0): Not using default mode "320x180" (hsync out of range)
+[  4051.907] (II) MACH64(0): Not using default mode "720x405" (hsync out of range)
+[  4051.907] (II) MACH64(0): Not using default mode "360x202" (hsync out of range)
+[  4051.907] (II) MACH64(0): Not using default mode "720x405" (hsync out of range)
+[  4051.907] (II) MACH64(0): Not using default mode "360x202" (hsync out of range)
+[  4051.907] (II) MACH64(0): Not using default mode "864x486" (monitor doesn't support reduced blanking)
+[  4051.907] (II) MACH64(0): Not using default mode "960x540" (monitor doesn't support reduced blanking)
+[  4051.907] (II) MACH64(0): Not using default mode "1024x576" (monitor doesn't support reduced blanking)
+[  4051.907] (II) MACH64(0): Not using default mode "1280x720" (monitor doesn't support reduced blanking)
+[  4051.908] (II) MACH64(0): Not using default mode "1368x768" (monitor doesn't support reduced blanking)
+[  4051.908] (II) MACH64(0): Not using default mode "1600x900" (monitor doesn't support reduced blanking)
+[  4051.908] (II) MACH64(0): Not using default mode "1920x1080" (width too large for virtual size)
+[  4051.908] (II) MACH64(0): Not using default mode "1920x1080" (width too large for virtual size)
+[  4051.908] (II) MACH64(0): Not using default mode "2048x1152" (width too large for virtual size)
+[  4051.908] (II) MACH64(0): Not using default mode "2048x1152" (width too large for virtual size)
+[  4051.908] (II) MACH64(0): Not using default mode "2560x1440" (width too large for virtual size)
+[  4051.908] (II) MACH64(0): Not using default mode "1280x720" (hsync out of range)
+[  4051.908] (II) MACH64(0): Not using default mode "2560x1440" (width too large for virtual size)
+[  4051.908] (II) MACH64(0): Not using default mode "1280x720" (hsync out of range)
+[  4051.908] (II) MACH64(0): Not using default mode "2880x1620" (insufficient memory for mode)
+[  4051.908] (II) MACH64(0): Not using default mode "1440x810" (hsync out of range)
+[  4051.908] (II) MACH64(0): Not using default mode "2880x1620" (insufficient memory for mode)
+[  4051.908] (II) MACH64(0): Not using default mode "1440x810" (hsync out of range)
+[  4051.908] (II) MACH64(0): Not using default mode "3200x1800" (insufficient memory for mode)
+[  4051.908] (II) MACH64(0): Not using default mode "1600x900" (hsync out of range)
+[  4051.909] (II) MACH64(0): Not using default mode "3200x1800" (insufficient memory for mode)
+[  4051.909] (II) MACH64(0): Not using default mode "1600x900" (bad mode clock/interlace/doublescan)
+[  4051.909] (II) MACH64(0): Not using default mode "3840x2160" (insufficient memory for mode)
+[  4051.909] (II) MACH64(0): Not using default mode "1920x1080" (width too large for virtual size)
+[  4051.909] (II) MACH64(0): Not using default mode "3840x2160" (insufficient memory for mode)
+[  4051.909] (II) MACH64(0): Not using default mode "1920x1080" (width too large for virtual size)
+[  4051.909] (II) MACH64(0): Not using default mode "4096x2304" (insufficient memory for mode)
+[  4051.909] (II) MACH64(0): Not using default mode "2048x1152" (width too large for virtual size)
+[  4051.909] (II) MACH64(0): Not using default mode "4096x2304" (insufficient memory for mode)
+[  4051.909] (II) MACH64(0): Not using default mode "2048x1152" (width too large for virtual size)
+[  4051.909] (II) MACH64(0): Not using default mode "5120x2880" (insufficient memory for mode)
+[  4051.909] (II) MACH64(0): Not using default mode "2560x1440" (width too large for virtual size)
+[  4051.909] (II) MACH64(0): Not using default mode "5120x2880" (insufficient memory for mode)
+[  4051.909] (II) MACH64(0): Not using default mode "2560x1440" (width too large for virtual size)
+[  4051.909] (II) MACH64(0): Not using default mode "7680x4320" (insufficient memory for mode)
+[  4051.909] (II) MACH64(0): Not using default mode "3840x2160" (insufficient memory for mode)
+[  4051.909] (II) MACH64(0): Not using default mode "7680x4320" (insufficient memory for mode)
+[  4051.909] (II) MACH64(0): Not using default mode "3840x2160" (insufficient memory for mode)
+[  4051.909] (II) MACH64(0): Not using default mode "15360x8640" (insufficient memory for mode)
+[  4051.910] (II) MACH64(0): Not using default mode "7680x4320" (insufficient memory for mode)
+[  4051.910] (II) MACH64(0): Not using default mode "15360x8640" (insufficient memory for mode)
+[  4051.910] (II) MACH64(0): Not using default mode "7680x4320" (insufficient memory for mode)
+[  4051.910] (II) MACH64(0): Not using default mode "1280x800" (monitor doesn't support reduced blanking)
+[  4051.910] (II) MACH64(0): Not using default mode "1400x900" (monitor doesn't support reduced blanking)
+[  4051.910] (II) MACH64(0): Not using default mode "1680x1050" (width too large for virtual size)
+[  4051.910] (II) MACH64(0): Not using default mode "1680x1050" (width too large for virtual size)
+[  4051.910] (II) MACH64(0): Not using default mode "1920x1200" (width too large for virtual size)
+[  4051.910] (II) MACH64(0): Not using default mode "1920x1200" (width too large for virtual size)
+[  4051.910] (II) MACH64(0): Not using default mode "2560x1600" (width too large for virtual size)
+[  4051.910] (II) MACH64(0): Not using default mode "1280x800" (hsync out of range)
+[  4051.910] (II) MACH64(0): Not using default mode "2560x1600" (width too large for virtual size)
+[  4051.910] (II) MACH64(0): Not using default mode "1280x800" (hsync out of range)
+[  4051.911] (II) MACH64(0): Virtual size is 1600x1200 (pitch 1600)
+[  4051.911] (**) MACH64(0): *Mode "1600x1200R": 131.0 MHz, 74.1 kHz, 60.0 Hz
+[  4051.911] (II) MACH64(0): Modeline "1600x1200R"x60.0  131.00  1600 1656 1688 1768  1200 1203 1207 1235 +hsync -vsync (74.1 kHz z)
+[  4051.911] (**) MACH64(0): *Driver mode "1600x1200": 162.0 MHz, 75.0 kHz, 60.0 Hz
+[  4051.912] (II) MACH64(0): Modeline "1600x1200"x60.0  162.00  1600 1664 1856 2160  1200 1201 1204 1250 +hsync +vsync (75.0 kHz ezP)
+[  4051.912] (**) MACH64(0):  Default mode "1400x1050": 155.8 MHz, 81.5 kHz, 74.8 Hz
+[  4051.912] (II) MACH64(0): Modeline "1400x1050"x74.8  155.80  1400 1464 1784 1912  1050 1052 1064 1090 +hsync +vsync (81.5 kHz d)
+[  4051.912] (**) MACH64(0):  Default mode "1400x1050": 122.0 MHz, 64.9 kHz, 60.0 Hz
+[  4051.912] (II) MACH64(0): Modeline "1400x1050"x60.0  122.00  1400 1488 1640 1880  1050 1052 1064 1082 +hsync +vsync (64.9 kHz d)
+[  4051.912] (**) MACH64(0):  Default mode "1600x900": 118.2 MHz, 56.0 kHz, 59.9 Hz
+[  4051.912] (II) MACH64(0): Modeline "1600x900"x59.9  118.25  1600 1696 1856 2112  900 903 908 934 -hsync +vsync (56.0 kHz d)
+[  4051.912] (**) MACH64(0):  Default mode "1280x1024": 135.0 MHz, 80.0 kHz, 75.0 Hz
+[  4051.912] (II) MACH64(0): Modeline "1280x1024"x75.0  135.00  1280 1296 1440 1688  1024 1025 1028 1066 +hsync +vsync (80.0 kHz d)
+[  4051.912] (**) MACH64(0):  Default mode "1280x1024": 108.0 MHz, 64.0 kHz, 60.0 Hz
+[  4051.912] (II) MACH64(0): Modeline "1280x1024"x60.0  108.00  1280 1328 1440 1688  1024 1025 1028 1066 +hsync +vsync (64.0 kHz d)
+[  4051.912] (**) MACH64(0):  Default mode "1400x900": 103.5 MHz, 56.0 kHz, 60.0 Hz
+[  4051.912] (II) MACH64(0): Modeline "1400x900"x60.0  103.50  1400 1480 1624 1848  900 903 913 934 -hsync +vsync (56.0 kHz d)
+[  4051.912] (**) MACH64(0):  Default mode "1280x960": 108.0 MHz, 60.0 kHz, 60.0 Hz
+[  4051.913] (II) MACH64(0): Modeline "1280x960"x60.0  108.00  1280 1376 1488 1800  960 961 964 1000 +hsync +vsync (60.0 kHz d)
+[  4051.913] (**) MACH64(0):  Default mode "1368x768": 85.2 MHz, 47.8 kHz, 59.9 Hz
+[  4051.913] (II) MACH64(0): Modeline "1368x768"x59.9   85.25  1368 1440 1576 1784  768 771 781 798 -hsync +vsync (47.8 kHz d)
+[  4051.913] (**) MACH64(0):  Default mode "1280x800": 83.5 MHz, 49.7 kHz, 59.8 Hz
+[  4051.913] (II) MACH64(0): Modeline "1280x800"x59.8   83.50  1280 1352 1480 1680  800 803 809 831 -hsync +vsync (49.7 kHz d)
+[  4051.913] (**) MACH64(0):  Default mode "1152x864": 108.0 MHz, 67.5 kHz, 75.0 Hz
+[  4051.913] (II) MACH64(0): Modeline "1152x864"x75.0  108.00  1152 1216 1344 1600  864 865 868 900 +hsync +vsync (67.5 kHz d)
+[  4051.913] (**) MACH64(0):  Default mode "1280x720": 74.5 MHz, 44.8 kHz, 59.9 Hz
+[  4051.913] (II) MACH64(0): Modeline "1280x720"x59.9   74.50  1280 1344 1472 1664  720 723 728 748 -hsync +vsync (44.8 kHz d)
+[  4051.913] (**) MACH64(0):  Default mode "1024x768": 78.8 MHz, 60.0 kHz, 75.0 Hz
+[  4051.913] (II) MACH64(0): Modeline "1024x768"x75.0   78.75  1024 1040 1136 1312  768 769 772 800 +hsync +vsync (60.0 kHz d)
+[  4051.913] (**) MACH64(0):  Default mode "1024x768": 75.0 MHz, 56.5 kHz, 70.1 Hz
+[  4051.913] (II) MACH64(0): Modeline "1024x768"x70.1   75.00  1024 1048 1184 1328  768 771 777 806 -hsync -vsync (56.5 kHz d)
+[  4051.913] (**) MACH64(0):  Default mode "1024x768": 65.0 MHz, 48.4 kHz, 60.0 Hz
+[  4051.914] (II) MACH64(0): Modeline "1024x768"x60.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz d)
+[  4051.914] (**) MACH64(0):  Default mode "896x672": 102.4 MHz, 83.7 kHz, 60.0 Hz (D)
+[  4051.914] (II) MACH64(0): Modeline "896x672"x60.0  102.40  896 960 1060 1224  672 672 674 697 doublescan -hsync +vsync (83.7 kHz d)
+[  4051.914] (**) MACH64(0):  Default mode "1024x576": 78.4 MHz, 71.0 kHz, 60.0 Hz (D)
+[  4051.914] (II) MACH64(0): Modeline "1024x576"x60.0   78.38  1024 1048 1064 1104  576 577 580 592 doublescan +hsync -vsync (71.0 kHz d)
+[  4051.914] (**) MACH64(0):  Default mode "1024x576": 98.5 MHz, 71.6 kHz, 60.0 Hz (D)
+[  4051.914] (II) MACH64(0): Modeline "1024x576"x60.0   98.50  1024 1092 1200 1376  576 577 580 597 doublescan -hsync +vsync (71.6 kHz d)
+[  4051.914] (**) MACH64(0):  Default mode "1024x576": 46.5 MHz, 35.9 kHz, 59.9 Hz
+[  4051.914] (II) MACH64(0): Modeline "1024x576"x59.9   46.50  1024 1064 1160 1296  576 579 584 599 -hsync +vsync (35.9 kHz d)
+[  4051.914] (**) MACH64(0):  Default mode "960x600": 77.0 MHz, 74.0 kHz, 60.0 Hz (D)
+[  4051.914] (II) MACH64(0): Modeline "960x600"x60.0   77.00  960 984 1000 1040  600 601 604 617 doublescan +hsync -vsync (74.0 kHz d)
+[  4051.914] (**) MACH64(0):  Default mode "960x600": 96.6 MHz, 74.6 kHz, 59.9 Hz (D)
+[  4051.914] (II) MACH64(0): Modeline "960x600"x59.9   96.62  960 1028 1128 1296  600 601 604 622 doublescan -hsync +vsync (74.6 kHz d)
+[  4051.914] (**) MACH64(0):  Default mode "832x624": 57.3 MHz, 49.7 kHz, 74.6 Hz
+[  4051.914] (II) MACH64(0): Modeline "832x624"x74.6   57.28  832 864 928 1152  624 625 628 667 -hsync -vsync (49.7 kHz d)
+[  4051.914] (**) MACH64(0):  Default mode "960x540": 69.2 MHz, 66.6 kHz, 60.0 Hz (D)
+[  4051.915] (II) MACH64(0): Modeline "960x540"x60.0   69.25  960 984 1000 1040  540 541 544 555 doublescan +hsync -vsync (66.6 kHz d)
+[  4051.915] (**) MACH64(0):  Default mode "960x540": 86.5 MHz, 67.2 kHz, 60.0 Hz (D)
+[  4051.915] (II) MACH64(0): Modeline "960x540"x60.0   86.50  960 1024 1124 1288  540 541 544 560 doublescan -hsync +vsync (67.2 kHz d)
+[  4051.915] (**) MACH64(0):  Default mode "960x540": 40.8 MHz, 33.5 kHz, 59.6 Hz
+[  4051.915] (II) MACH64(0): Modeline "960x540"x59.6   40.75  960 992 1088 1216  540 543 548 562 -hsync +vsync (33.5 kHz d)
+[  4051.915] (**) MACH64(0):  Default mode "800x600": 49.5 MHz, 46.9 kHz, 75.0 Hz
+[  4051.915] (II) MACH64(0): Modeline "800x600"x75.0   49.50  800 816 896 1056  600 601 604 625 +hsync +vsync (46.9 kHz d)
+[  4051.915] (**) MACH64(0):  Default mode "800x600": 50.0 MHz, 48.1 kHz, 72.2 Hz
+[  4051.915] (II) MACH64(0): Modeline "800x600"x72.2   50.00  800 856 976 1040  600 637 643 666 +hsync +vsync (48.1 kHz d)
+[  4051.915] (**) MACH64(0):  Default mode "800x600": 87.8 MHz, 81.2 kHz, 65.0 Hz (D)
+[  4051.915] (II) MACH64(0): Modeline "800x600"x65.0   87.75  800 832 928 1080  600 600 602 625 doublescan +hsync +vsync (81.2 kHz d)
+[  4051.915] (**) MACH64(0):  Default mode "800x600": 40.0 MHz, 37.9 kHz, 60.3 Hz
+[  4051.915] (II) MACH64(0): Modeline "800x600"x60.3   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz d)
+[  4051.915] (**) MACH64(0):  Default mode "800x600": 81.0 MHz, 75.0 kHz, 60.0 Hz (D)
+[  4051.915] (II) MACH64(0): Modeline "800x600"x60.0   81.00  800 832 928 1080  600 600 602 625 doublescan +hsync +vsync (75.0 kHz d)
+[  4051.916] (**) MACH64(0):  Default mode "800x600": 36.0 MHz, 35.2 kHz, 56.2 Hz
+[  4051.916] (II) MACH64(0): Modeline "800x600"x56.2   36.00  800 824 896 1024  600 601 603 625 +hsync +vsync (35.2 kHz d)
+[  4051.916] (**) MACH64(0):  Default mode "840x525": 73.1 MHz, 65.3 kHz, 60.0 Hz (D)
+[  4051.916] (II) MACH64(0): Modeline "840x525"x60.0   73.12  840 892 980 1120  525 526 529 544 doublescan -hsync +vsync (65.3 kHz d)
+[  4051.916] (**) MACH64(0):  Default mode "864x486": 32.5 MHz, 30.3 kHz, 59.9 Hz
+[  4051.916] (II) MACH64(0): Modeline "864x486"x59.9   32.50  864 888 968 1072  486 489 494 506 -hsync +vsync (30.3 kHz d)
+[  4051.916] (**) MACH64(0):  Default mode "700x525": 77.9 MHz, 81.5 kHz, 74.8 Hz (D)
+[  4051.916] (II) MACH64(0): Modeline "700x525"x74.8   77.90  700 732 892 956  525 526 532 545 doublescan +hsync +vsync (81.5 kHz d)
+[  4051.916] (**) MACH64(0):  Default mode "700x525": 61.0 MHz, 64.9 kHz, 60.0 Hz (D)
+[  4051.916] (II) MACH64(0): Modeline "700x525"x60.0   61.00  700 744 820 940  525 526 532 541 doublescan +hsync +vsync (64.9 kHz d)
+[  4051.916] (**) MACH64(0):  Default mode "800x450": 59.1 MHz, 56.0 kHz, 59.9 Hz (D)
+[  4051.916] (II) MACH64(0): Modeline "800x450"x59.9   59.12  800 848 928 1056  450 451 454 467 doublescan -hsync +vsync (56.0 kHz d)
+[  4051.916] (**) MACH64(0):  Default mode "640x512": 67.5 MHz, 80.0 kHz, 75.0 Hz (D)
+[  4051.916] (II) MACH64(0): Modeline "640x512"x75.0   67.50  640 648 720 844  512 512 514 533 doublescan +hsync +vsync (80.0 kHz d)
+[  4051.917] (**) MACH64(0):  Default mode "640x512": 54.0 MHz, 64.0 kHz, 60.0 Hz (D)
+[  4051.917] (II) MACH64(0): Modeline "640x512"x60.0   54.00  640 664 720 844  512 512 514 533 doublescan +hsync +vsync (64.0 kHz d)
+[  4051.917] (**) MACH64(0):  Default mode "700x450": 51.8 MHz, 56.0 kHz, 60.0 Hz (D)
+[  4051.917] (II) MACH64(0): Modeline "700x450"x60.0   51.75  700 740 812 924  450 451 456 467 doublescan -hsync +vsync (56.0 kHz d)
+[  4051.917] (**) MACH64(0):  Default mode "640x480": 31.5 MHz, 37.5 kHz, 75.0 Hz
+[  4051.917] (II) MACH64(0): Modeline "640x480"x75.0   31.50  640 656 720 840  480 481 484 500 -hsync -vsync (37.5 kHz d)
+[  4051.917] (**) MACH64(0):  Default mode "640x480": 31.5 MHz, 37.9 kHz, 72.8 Hz
+[  4051.917] (II) MACH64(0): Modeline "640x480"x72.8   31.50  640 664 704 832  480 489 492 520 -hsync -vsync (37.9 kHz d)
+[  4051.917] (**) MACH64(0):  Default mode "640x480": 54.0 MHz, 60.0 kHz, 60.0 Hz (D)
+[  4051.917] (II) MACH64(0): Modeline "640x480"x60.0   54.00  640 688 744 900  480 480 482 500 doublescan +hsync +vsync (60.0 kHz d)
+[  4051.917] (**) MACH64(0):  Default mode "640x480": 25.2 MHz, 31.5 kHz, 59.9 Hz
+[  4051.917] (II) MACH64(0): Modeline "640x480"x59.9   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz d)
+[  4051.917] (**) MACH64(0):  Driver mode "720x400": 28.3 MHz, 31.5 kHz, 70.1 Hz
+[  4051.917] (II) MACH64(0): Modeline "720x400"x70.1   28.32  720 738 846 900  400 412 414 449 -hsync +vsync (31.5 kHz e)
+[  4051.917] (**) MACH64(0):  Default mode "684x384": 42.6 MHz, 47.8 kHz, 59.9 Hz (D)
+[  4051.918] (II) MACH64(0): Modeline "684x384"x59.9   42.62  684 720 788 892  384 385 390 399 doublescan -hsync +vsync (47.8 kHz d)
+[  4051.918] (**) MACH64(0):  Default mode "640x400": 35.5 MHz, 49.3 kHz, 60.0 Hz (D)
+[  4051.918] (II) MACH64(0): Modeline "640x400"x60.0   35.50  640 664 680 720  400 401 404 411 doublescan +hsync -vsync (49.3 kHz d)
+[  4051.918] (**) MACH64(0):  Default mode "640x400": 41.8 MHz, 49.7 kHz, 59.9 Hz (D)
+[  4051.918] (II) MACH64(0): Modeline "640x400"x59.9   41.75  640 676 740 840  400 401 404 415 doublescan -hsync +vsync (49.7 kHz d)
+[  4051.918] (**) MACH64(0):  Default mode "576x432": 54.0 MHz, 67.5 kHz, 75.0 Hz (D)
+[  4051.918] (II) MACH64(0): Modeline "576x432"x75.0   54.00  576 608 672 800  432 432 434 450 doublescan +hsync +vsync (67.5 kHz d)
+[  4051.918] (**) MACH64(0):  Default mode "640x360": 37.2 MHz, 44.8 kHz, 59.9 Hz (D)
+[  4051.918] (II) MACH64(0): Modeline "640x360"x59.9   37.25  640 672 736 832  360 361 364 374 doublescan -hsync +vsync (44.8 kHz d)
+[  4051.918] (**) MACH64(0):  Default mode "512x384": 39.4 MHz, 60.0 kHz, 75.0 Hz (D)
+[  4051.918] (II) MACH64(0): Modeline "512x384"x75.0   39.38  512 520 568 656  384 384 386 400 doublescan +hsync +vsync (60.0 kHz d)
+[  4051.918] (**) MACH64(0):  Default mode "512x384": 37.5 MHz, 56.5 kHz, 70.1 Hz (D)
+[  4051.918] (II) MACH64(0): Modeline "512x384"x70.1   37.50  512 524 592 664  384 385 388 403 doublescan -hsync -vsync (56.5 kHz d)
+[  4051.918] (**) MACH64(0):  Default mode "512x384": 32.5 MHz, 48.4 kHz, 60.0 Hz (D)
+[  4051.918] (II) MACH64(0): Modeline "512x384"x60.0   32.50  512 524 592 672  384 385 388 403 doublescan -hsync -vsync (48.4 kHz d)
+[  4051.919] (**) MACH64(0):  Default mode "512x288": 23.2 MHz, 35.9 kHz, 60.0 Hz (D)
+[  4051.919] (II) MACH64(0): Modeline "512x288"x60.0   23.25  512 532 580 648  288 289 292 299 doublescan -hsync +vsync (35.9 kHz d)
+[  4051.919] (**) MACH64(0):  Default mode "512x288": 21.0 MHz, 35.5 kHz, 59.9 Hz (D)
+[  4051.919] (II) MACH64(0): Modeline "512x288"x59.9   21.00  512 536 552 592  288 289 292 296 doublescan +hsync -vsync (35.5 kHz d)
+[  4051.919] (**) MACH64(0):  Default mode "416x312": 28.6 MHz, 49.7 kHz, 74.7 Hz (D)
+[  4051.919] (II) MACH64(0): Modeline "416x312"x74.7   28.64  416 432 464 576  312 312 314 333 doublescan -hsync -vsync (49.7 kHz d)
+[  4051.919] (**) MACH64(0):  Default mode "480x270": 18.6 MHz, 33.3 kHz, 59.8 Hz (D)
+[  4051.919] (II) MACH64(0): Modeline "480x270"x59.8   18.62  480 504 520 560  270 271 274 278 doublescan +hsync -vsync (33.3 kHz d)
+[  4051.919] (**) MACH64(0):  Default mode "480x270": 20.4 MHz, 33.5 kHz, 59.6 Hz (D)
+[  4051.919] (II) MACH64(0): Modeline "480x270"x59.6   20.38  480 496 544 608  270 271 274 281 doublescan -hsync +vsync (33.5 kHz d)
+[  4051.919] (**) MACH64(0):  Default mode "400x300": 24.8 MHz, 46.9 kHz, 75.1 Hz (D)
+[  4051.919] (II) MACH64(0): Modeline "400x300"x75.1   24.75  400 408 448 528  300 300 302 312 doublescan +hsync +vsync (46.9 kHz d)
+[  4051.919] (**) MACH64(0):  Default mode "400x300": 25.0 MHz, 48.1 kHz, 72.2 Hz (D)
+[  4051.919] (II) MACH64(0): Modeline "400x300"x72.2   25.00  400 428 488 520  300 318 321 333 doublescan +hsync +vsync (48.1 kHz d)
+[  4051.919] (**) MACH64(0):  Default mode "400x300": 20.0 MHz, 37.9 kHz, 60.3 Hz (D)
+[  4051.920] (II) MACH64(0): Modeline "400x300"x60.3   20.00  400 420 484 528  300 300 302 314 doublescan +hsync +vsync (37.9 kHz d)
+[  4051.920] (**) MACH64(0):  Default mode "400x300": 18.0 MHz, 35.2 kHz, 56.3 Hz (D)
+[  4051.920] (II) MACH64(0): Modeline "400x300"x56.3   18.00  400 412 448 512  300 300 301 312 doublescan +hsync +vsync (35.2 kHz d)
+[  4051.920] (**) MACH64(0):  Default mode "432x243": 16.2 MHz, 30.3 kHz, 59.9 Hz (D)
+[  4051.920] (II) MACH64(0): Modeline "432x243"x59.9   16.25  432 444 484 536  243 244 247 253 doublescan -hsync +vsync (30.3 kHz d)
+[  4051.920] (**) MACH64(0):  Default mode "432x243": 15.2 MHz, 29.8 kHz, 59.6 Hz (D)
+[  4051.920] (II) MACH64(0): Modeline "432x243"x59.6   15.25  432 456 472 512  243 244 247 250 doublescan +hsync -vsync (29.8 kHz d)
+[  4051.920] (**) MACH64(0):  Default mode "320x240": 15.8 MHz, 37.5 kHz, 75.0 Hz (D)
+[  4051.920] (II) MACH64(0): Modeline "320x240"x75.0   15.75  320 328 360 420  240 240 242 250 doublescan -hsync -vsync (37.5 kHz d)
+[  4051.920] (**) MACH64(0):  Default mode "320x240": 15.8 MHz, 37.9 kHz, 72.8 Hz (D)
+[  4051.920] (II) MACH64(0): Modeline "320x240"x72.8   15.75  320 332 352 416  240 244 246 260 doublescan -hsync -vsync (37.9 kHz d)
+[  4051.920] (**) MACH64(0):  Default mode "320x240": 12.6 MHz, 31.5 kHz, 60.1 Hz (D)
+[  4051.920] (II) MACH64(0): Modeline "320x240"x60.1   12.59  320 328 376 400  240 245 246 262 doublescan -hsync -vsync (31.5 kHz d)
+[  4051.920] (**) MACH64(0): Display dimensions: (410, 310) mm
+[  4051.921] (**) MACH64(0): DPI set to (99, 98)
+[  4051.921] (II) Loading sub module "fb"
+[  4051.921] (II) LoadModule: "fb"
+[  4051.921] (II) Module "fb" already built-in
+[  4051.921] (II) Loading sub module "ramdac"
+[  4051.921] (II) LoadModule: "ramdac"
+[  4051.921] (II) Module "ramdac" already built-in
+[  4051.921] (II) Loading sub module "exa"
+[  4051.921] (II) LoadModule: "exa"
+[  4051.922] (II) Loading /usr/lib/xorg/modules/libexa.so
+[  4051.923] (II) Module exa: vendor="X.Org Foundation"
+[  4051.923] 	compiled for 1.21.1.7, module version = 2.6.0
+[  4051.923] 	ABI class: X.Org Video Driver, version 25.2
+[  4051.923] (II) Loading sub module "i2c"
+[  4051.923] (II) LoadModule: "i2c"
+[  4051.923] (II) Module "i2c" already built-in
+[  4051.923] (II) MACH64(0): I2C bus "Mach64" initialized.
+[  4051.930] (WW) MACH64(0): DRI static buffer allocation failed -- need at least 11250 kB video memory
+[  4051.931] (II) MACH64(0): EXA memory management initialized
+	 base     :  0xb6724000
+	 offscreen: +    3a9800
+	 size     : +    7ffc00
+	 cursor   :  0xb6f23c00
+[  4051.931] (II) MACH64(0): Will use 4441 kB of offscreen memory for EXA
+		 or  1.18 viewports (composite)
+		 or  6.58 dvdframes (xvideo)
+[  4051.931] (II) MACH64(0): Render acceleration enabled
+[  4051.931] (II) EXA(0): Offscreen pixmap area of 4547584 bytes
+[  4051.931] (II) EXA(0): Driver registered support for the following operations:
+[  4051.931] (II)         Solid
+[  4051.931] (II)         Copy
+[  4051.931] (II)         Composite (RENDER acceleration)
+[  4051.932] (==) MACH64(0): Backing store enabled
+[  4051.932] (==) MACH64(0): Silken mouse enabled
+[  4051.933] (==) MACH64(0): DPMS enabled
+[  4051.933] (WW) MACH64(0): Option "PreferredMode" is not used
+[  4051.933] (II) MACH64(0): Direct rendering disabled
+[  4051.933] (II) Initializing extension Generic Event Extension
+[  4051.935] (II) Initializing extension SHAPE
+[  4051.936] (II) Initializing extension MIT-SHM
+[  4051.937] (II) Initializing extension XInputExtension
+[  4051.939] (II) Initializing extension XTEST
+[  4051.940] (II) Initializing extension BIG-REQUESTS
+[  4051.941] (II) Initializing extension SYNC
+[  4051.942] (II) Initializing extension XKEYBOARD
+[  4051.944] (II) Initializing extension XC-MISC
+[  4051.945] (II) Initializing extension SECURITY
+[  4051.946] (II) Initializing extension XFIXES
+[  4051.947] (II) Initializing extension RENDER
+[  4051.948] (II) Initializing extension RANDR
+[  4051.951] (II) Initializing extension COMPOSITE
+[  4051.952] (II) Initializing extension DAMAGE
+[  4051.953] (II) Initializing extension MIT-SCREEN-SAVER
+[  4051.954] (II) Initializing extension DOUBLE-BUFFER
+[  4051.956] (II) Initializing extension RECORD
+[  4051.957] (II) Initializing extension DPMS
+[  4051.958] (II) Initializing extension Present
+[  4051.959] (II) Initializing extension DRI3
+[  4051.959] (II) Initializing extension X-Resource
+[  4051.960] (II) Initializing extension XVideo
+[  4051.962] (II) Initializing extension XVideo-MotionCompensation
+[  4051.962] (II) Initializing extension SELinux
+[  4051.962] (II) SELinux: Disabled on system
+[  4051.962] (II) Initializing extension GLX
+[  4051.963] (II) AIGLX: Screen 0 is not DRI2 capable
+[  4052.174] (II) IGLX: Loaded and initialized swrast
+[  4052.174] (II) GLX: Initialized DRISWRAST GL provider for screen 0
+[  4052.174] (II) Initializing extension XFree86-VidModeExtension
+[  4052.175] (II) Initializing extension XFree86-DGA
+[  4052.177] (II) Initializing extension XFree86-DRI
+[  4052.177] (II) Initializing extension DRI2
+[  4052.438] (II) config/udev: Adding input device Power Button (/dev/input/event3)
+[  4052.439] (**) Power Button: Applying InputClass "libinput keyboard catchall"
+[  4052.439] (II) LoadModule: "libinput"
+[  4052.440] (II) Loading /usr/lib/xorg/modules/input/libinput_drv.so
+[  4052.450] (II) Module libinput: vendor="X.Org Foundation"
+[  4052.450] 	compiled for 1.21.1.3, module version = 1.2.1
+[  4052.450] 	Module class: X.Org XInput Driver
+[  4052.450] 	ABI class: X.Org XInput driver, version 24.4
+[  4052.450] (II) Using input driver 'libinput' for 'Power Button'
+[  4052.450] (**) Power Button: always reports core events
+[  4052.450] (**) Option "Device" "/dev/input/event3"
+[  4052.470] (II) event3  - Power Button: is tagged by udev as: Keyboard
+[  4052.470] (II) event3  - Power Button: device is a keyboard
+[  4052.471] (II) event3  - Power Button: device removed
+[  4052.488] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXPWRBN:00/input/input4/event3"
+[  4052.488] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 6)
+[  4052.495] (II) event3  - Power Button: is tagged by udev as: Keyboard
+[  4052.495] (II) event3  - Power Button: device is a keyboard
+[  4052.500] (II) config/udev: Adding input device Sleep Button (/dev/input/event2)
+[  4052.500] (**) Sleep Button: Applying InputClass "libinput keyboard catchall"
+[  4052.501] (II) Using input driver 'libinput' for 'Sleep Button'
+[  4052.501] (**) Sleep Button: always reports core events
+[  4052.501] (**) Option "Device" "/dev/input/event2"
+[  4052.507] (II) event2  - Sleep Button: is tagged by udev as: Keyboard
+[  4052.508] (II) event2  - Sleep Button: device is a keyboard
+[  4052.509] (II) event2  - Sleep Button: device removed
+[  4052.528] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0E:00/input/input3/event2"
+[  4052.528] (II) XINPUT: Adding extended input device "Sleep Button" (type: KEYBOARD, id 7)
+[  4052.535] (II) event2  - Sleep Button: is tagged by udev as: Keyboard
+[  4052.536] (II) event2  - Sleep Button: device is a keyboard
+[  4052.541] (II) config/udev: Adding input device AT Translated Set 2 keyboard (/dev/input/event0)
+[  4052.541] (**) AT Translated Set 2 keyboard: Applying InputClass "libinput keyboard catchall"
+[  4052.541] (II) Using input driver 'libinput' for 'AT Translated Set 2 keyboard'
+[  4052.541] (**) AT Translated Set 2 keyboard: always reports core events
+[  4052.541] (**) Option "Device" "/dev/input/event0"
+[  4052.549] (II) event0  - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
+[  4052.549] (II) event0  - AT Translated Set 2 keyboard: device is a keyboard
+[  4052.552] (II) event0  - AT Translated Set 2 keyboard: device removed
+[  4052.568] (**) Option "config_info" "udev:/sys/devices/platform/i8042/serio0/input/input0/event0"
+[  4052.568] (II) XINPUT: Adding extended input device "AT Translated Set 2 keyboard" (type: KEYBOARD, id 8)
+[  4052.576] (II) event0  - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
+[  4052.577] (II) event0  - AT Translated Set 2 keyboard: device is a keyboard
+[  4052.584] (II) config/udev: Adding input device ImPS/2 Generic Wheel Mouse (/dev/input/event1)
+[  4052.584] (**) ImPS/2 Generic Wheel Mouse: Applying InputClass "libinput pointer catchall"
+[  4052.584] (II) Using input driver 'libinput' for 'ImPS/2 Generic Wheel Mouse'
+[  4052.584] (**) ImPS/2 Generic Wheel Mouse: always reports core events
+[  4052.584] (**) Option "Device" "/dev/input/event1"
+[  4052.591] (II) event1  - ImPS/2 Generic Wheel Mouse: is tagged by udev as: Mouse
+[  4052.593] (II) event1  - ImPS/2 Generic Wheel Mouse: device is a pointer
+[  4052.595] (II) event1  - ImPS/2 Generic Wheel Mouse: device removed
+[  4052.624] (**) Option "config_info" "udev:/sys/devices/platform/i8042/serio1/input/input2/event1"
+[  4052.624] (II) XINPUT: Adding extended input device "ImPS/2 Generic Wheel Mouse" (type: MOUSE, id 9)
+[  4052.625] (**) Option "AccelerationScheme" "none"
+[  4052.625] (**) ImPS/2 Generic Wheel Mouse: (accel) selected scheme none/0
+[  4052.625] (**) ImPS/2 Generic Wheel Mouse: (accel) acceleration factor: 2.000
+[  4052.625] (**) ImPS/2 Generic Wheel Mouse: (accel) acceleration threshold: 4
+[  4052.632] (II) event1  - ImPS/2 Generic Wheel Mouse: is tagged by udev as: Mouse
+[  4052.634] (II) event1  - ImPS/2 Generic Wheel Mouse: device is a pointer
+[  4052.639] (II) config/udev: Adding input device ImPS/2 Generic Wheel Mouse (/dev/input/mouse0)
+[  4052.640] (II) No input driver specified, ignoring this device.
+[  4052.640] (II) This device may have been added with another device file.
+[  4052.643] (II) config/udev: Adding input device PC Speaker (/dev/input/event4)
+[  4052.643] (II) No input driver specified, ignoring this device.
+[  4052.643] (II) This device may have been added with another device file.

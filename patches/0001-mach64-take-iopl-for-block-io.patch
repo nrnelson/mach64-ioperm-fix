@@ -1,0 +1,33 @@
+--- a/src/atiprobe.c
++++ b/src/atiprobe.c
+@@ -28,6 +28,12 @@
+ #include <stdio.h>
+ #include <stdint.h>
+ 
++#if defined(__linux__) && (defined(__i386__) || defined(__x86_64__))
++#include <errno.h>
++/* <sys/io.h> conflicts with xorg compiler.h in/out helpers */
++extern int iopl(int);
++#endif
++
+ #include "ati.h"
+ #include "atibus.h"
+ #include "atichip.h"
+@@ -449,6 +455,17 @@
+         pATI->CPIOBase = PCI_REGION_BASE(pVideo, 1, REGION_IO);
+         pATI->CPIODecoding = BLOCK_IO;
+         pATI->PCIInfo = pVideo;
++
++#if defined(__linux__) && (defined(__i386__) || defined(__x86_64__))
++        /*
++         * On Linux/x86 xf86EnableIO() only grants ports 0x000-0x3FF via
++         * ioperm().  Block I/O above 0x3FF and the VGA setup port 0x46E8
++         * then fault on first access, so take full I/O privilege here.
++         */
++        if (iopl(3) != 0)
++            xf86Msg(X_WARNING, MACH64_NAME ": iopl(3) failed: %s\n",
++                strerror(errno));
++#endif
+     }
+ 
+     if (!ATIMach64Probe(pATI, pVideo, pATI->Chip))
